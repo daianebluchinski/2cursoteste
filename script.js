@@ -1,8 +1,9 @@
 import { PALAVRAS_RUINS } from "./palavrasRuins.js";
 const botaoMostraPalavras = document.querySelector('#botao-palavrachave');
-
+function mostraPalavrasChave() {
+  alert('Fui clicado!');
+}
 botaoMostraPalavras.addEventListener('click', mostraPalavrasChave);
-
 function mostraPalavrasChave() {
     const texto = document.querySelector('#entrada-de-texto').value;
     const campoResultado = document.querySelector('#resultado-palavrachave');
